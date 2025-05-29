@@ -1,0 +1,1 @@
+通过verilog代码实现了RISC-V设计，顶层模块包含中央处理器CPU、指令存储器Inst_Mem和数据存储器Data_Mem三部分。CPU模块包含处理器PRO和控制器CTR两部分，其中处理器PRO模块包含if_stage、if_id_regs、id_stage、id_ex_regs、ex_stage、ex_mem_regs、mem_stage、mem_wb_regs和wb_stage九部分，控制器CTR模块包含main_ctr和alu_ctr两部分。该设计可以完成取指、译码、执行、访存、写回五级处理过程，支持ADD、SUB、LW、SW、BEQ五种指令，并通过数据前移和停顿解决了数据冒险和控制冒险。Testbench仿真和波形分析表明五级流水线在100MHz时钟下正常运行，指令执行无误。
